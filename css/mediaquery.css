@@ -1,0 +1,121 @@
+@media only screen and (max-width: 380px) {
+    .banner {
+        display: grid;
+    }
+
+    .banner .left {
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner .right {
+        max-width: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .banner {
+        padding: 5px 5px 10px 5px;
+    }
+}
+
+
+@media only screen and (max-width: 560px) {
+    .banner {
+        display: grid;
+    }
+
+    .banner .left {
+        max-width: 100%;
+    }
+
+    .banner .left .features {
+        max-width: 100%;
+    }
+
+    .banner .left .features .pricing {
+        justify-content: center;
+    }
+
+    .banner .right {
+        max-width: 100%;
+
+    }
+
+    .swiper .swiper-button-prev {
+        left: 1vh;
+    }
+
+    .swiper .swiper-button-next {
+        right: 1vh;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #header-content {
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        height: 100vh;
+        background-color: gray;
+        z-index: 1000;
+        gap: 5px;
+    }
+
+    .banner {
+        margin-top: 0;
+        overflow-y: scroll;
+    }
+
+    .swiper-slide {
+        overflow-y: scroll;
+    }
+
+    .banner .left h1 {
+        font-size: 3em;
+    }
+
+    #header-content .nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #open-header {
+        background-color: transparent;
+        border: none;
+        display: block;
+    }
+
+    #open-header img {
+        min-width: 26px;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    }
+
+    #close-header {
+        background-color: transparent;
+        border: none;
+        display: block;
+    }
+
+    header {
+        position: static;
+    }
+
+}
+
+@media only screen and (min-width: 780px) {
+    #header-content {
+        display: flex;
+    }
+
+    #open-header {
+        display: none;
+    }
+
+    #close-header {
+        display: none;
+    }
+}
